@@ -53,6 +53,8 @@ if !exists("g:vue_disable_pre_processors") || !g:vue_disable_pre_processors
   call s:register_language('stylus', 'style')
   call s:register_language('sass', 'style')
   call s:register_language('scss', 'style')
+  call s:register_language('yaml', 'i18n')
+  call s:register_language('json', 'i18n')
 endif
 
 syn region  vueSurroundingTag   contained start=+<\(script\|style\|template\)+ end=+>+ fold contains=htmlTagN,htmlString,htmlArg,htmlValue,htmlTagError,htmlEvent
